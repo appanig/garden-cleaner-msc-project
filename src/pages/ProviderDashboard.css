@@ -1,0 +1,105 @@
+.provider-dashboard-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #2C3E50;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+.job-item {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.accept,
+.reject,
+.complete-btn {
+  padding: 8px 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.accept {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reject {
+  background-color: #f44336;
+  color: white;
+}
+
+.complete-btn {
+  background-color: #2196F3;
+  color: white;
+  margin-top: 10px;
+}
+
+.upload-box {
+  margin-top: 10px;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.status-pill.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-pill.in-progress {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.status-pill.completed {
+  background-color: #d4edda;
+  color: #155724;
+}
