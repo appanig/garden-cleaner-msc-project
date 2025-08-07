@@ -1,0 +1,191 @@
+/* Base styles */
+.provider-dashboard-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2C3E50;
+}
+
+/* Header */
+.provider-dashboard-page h2 {
+  margin-bottom: 24px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.button_tab {
+  padding: 10px 16px;
+  border: none;
+  background: #ccc;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button_tab.active {
+  background: #007f5f;
+  color: #fff;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 25px;
+}
+
+/* Job and service items */
+.job-item {
+  background: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.job-item.editing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.job-item.editing button{
+  width: 100%;
+  padding: 10px 0;
+}
+
+.job-item.editing input,.job-item.editing textarea {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+}
+
+.job-item.editing input[type="checkbox"]{
+  width: auto;
+}
+/* Status Badges */
+.status-pill {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+.status-pill.pending {
+  background-color: #ffa000;
+}
+
+.status-pill.in-progress {
+  background-color: #0288d1;
+}
+
+.status-pill.completed {
+  background-color: #388e3c;
+}
+
+.status-pill.eco {
+  background: #2e7d32;
+}
+
+.status-pill.standard {
+  background: #607d8b;
+}
+
+/* Form styles */
+.service-form {
+  margin-bottom: 20px;
+}
+
+.service-form input[type="text"],
+
+.service-form input[type="number"],
+.service-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.service-form textarea {
+  resize: vertical;
+}
+
+.service-form div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.service-form button {
+  padding: 10px 16px;
+  background-color: #007f5f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.service-form button:hover {
+  background-color: #005e46;
+}
+
+/* Action Buttons */
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  padding: 8px 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}
+
+button.danger {
+  background: #e53935;
+  color: white;
+}
+
+.accept {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reject {
+  background-color: #f44336;
+  color: white;
+}
+
+.complete-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Upload Box */
+.upload-box {
+  margin-top: 10px;
+}

@@ -1,0 +1,150 @@
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-sidebar {
+  width: 20%;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #334155;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+}
+
+.admin-sidebar li:hover,
+.admin-sidebar li.active {
+  background: #475569;
+}
+
+.admin-sidebar li span {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.admin-sidebar button{
+  margin-top: auto;
+}
+
+/* Short View */
+.admin-short-view {
+  width: 30%;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f3f4f6;
+}
+
+.short-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.short-card:hover {
+  transform: translateY(-2px);
+}
+
+.short-card.highlight {
+  border: 2px solid #4f46e5;
+}
+
+.short-card button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.short-card button:hover {
+  background: #dc2626;
+}
+
+/* Detailed View */
+.admin-details {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  overflow-y: auto;
+}
+
+.admin-details h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.service-badge {
+  background: #e0f2fe;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #0369a1;
+}
+
+.reject-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-top: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reject-btn:hover {
+  background: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .admin-sidebar,
+  .admin-short-view,
+  .admin-details {
+    width: 100%;
+  }
+}

@@ -1,0 +1,67 @@
+.submit-review-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #2C3E50;
+}
+
+
+
+.rating-stars {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.star {
+  cursor: pointer;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.star.active {
+  color: #FFD700;
+}
+
+.emoji {
+  display: block;
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+
+
+.image-upload label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.image-upload input {
+  margin-bottom: 10px;
+}
+
+.preview-image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #43a047;
+}

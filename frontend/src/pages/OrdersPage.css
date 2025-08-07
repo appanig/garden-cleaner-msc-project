@@ -1,0 +1,77 @@
+.orders-page {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.orders-page h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+.orders-table {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.orders-header,
+.orders-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.orders-header {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+}
+
+.orders-row {
+  border-bottom: 1px solid #eee;
+}
+
+.orders-row:last-child {
+  border-bottom: none;
+}
+
+.status-pill {
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  width: fit-content;
+}
+
+.status-pill.accepted {
+  background-color: #e0f7e9;
+  color: #2e7d32;
+}
+
+.status-pill.rejected {
+  background-color: #fdecea;
+  color: #c62828;
+}
+
+.status-pill.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-pill.completed {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.no-orders {
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
