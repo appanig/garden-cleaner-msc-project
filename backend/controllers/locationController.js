@@ -7,7 +7,7 @@ exports.updateUserLocation = async (req, res) => {
   if (!userId || latitude == null || longitude == null) {
     return res.status(400).json({ message: 'Missing required fields' });
   }
-  
+
   const locationStr = location;
 
   try {

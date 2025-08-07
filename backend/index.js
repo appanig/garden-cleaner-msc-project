@@ -8,7 +8,6 @@ const bcrypt = require('bcryptjs');
 const { setupSocket } = require('./utils/socket');
 const User = require('./models/User');
 
-
 const authRoutes = require('./routes/authRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
 const serviceRoutes = require('./routes/serviceRoutes');
